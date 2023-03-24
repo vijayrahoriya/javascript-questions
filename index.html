@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript question and some topics</title>
+</head>
+<body>
+    <h2>Javascript Question and Some Topics</h2>
+    <h4>To make our modern code work in older engines that don't understand recent features yet here is 2 tools for that</h4>
+    <ol>
+        <li>Transpillars</li>
+        <li>Polyfills</li>
+    </ol>
+    <span><Strong>Transpillars:</Strong> It takes our code and rewrite in old code syntax. Babel is most prominet Transpillars</span><br>
+    <span><Strong>Polyfills:</Strong> New language features may include not only syntax construct and methods but also built in functions.There are 2 libarirs for Polyfills 1. core js 2. polyfill.io <br> eg.-> Math.trunc()</span>
+
+    <h4>What does mean by primitive?</h4>
+    <span>primitive means that data types their values have only one thing</span>
+
+    <h4>Object</h4>
+    <span>let obj = new Object() // it is contructor object</span><br>
+    <span>We can not make a object key with let,return,for etc. keywords</span><br>
+    <span>To check a key is present in object we can use "in" eg. "key" in obj</span><br>
+    <span>If we have a primitive data type and we copy this value in another variable now if we change the value by copyvariable name it will change only for copyvariable not for our main variable.</span><br>
+    <span>Clonig a nested object in another object ----------> structuredClone(targetObject)</span><br>
+    <span><strong>Get keys,values => </strong>Object.keys(obj), Object.values(obj), Object.entries(obj)</span>
+
+    <h4>Numbers</h4>
+    <span>The method of num.toString(base) return a string represenation of number</span><br>
+    <span>base=2 => mostly use in debugging bitwise two operations, digits can be 0 and 1</span><br>
+    <span>base=16=> is used for hex color</span>
+
+    <h4>Map and Set</h4>
+    <span>Map=> we can create a map just like that: let a = new Map(); Map has some methods to store value,get value and so on. It stores a value in key,and value form a.set(Key,value) and we can also itreate on map: a.key() => print all keys in map, a.values() => print all values in map, a.entries() => print all entries in map. and we have a Object.fromEntries() method it creates a object with given key value.</span><br>
+    <span>Set=> Set is method it takes only unique key values if we write a key two times in a set it will take it only one time. we can add a value in set just like that:=> let a = new Set(); a.add({name:"vijay",age:20,name:"sumit"}) this example take name value only one time</span>
+
+    <h4>WeakMap and WeakSet</h4>
+    <span>diffrence between map and weakmap is that map can have a key primitive and nonprimitive but weakmap must take a key as obj or nonprimitive.</span><br>
+    <span><strong>Why we use weakmap method=> </strong> when we define a obj and set it in the map now if we set this obj and initialize its value blank but we can access this obj values because they stored in in map but if we stored this object in weakmap method and do the same work in this method we can not access object value beacuse they will be deleted automaticaly when we initialize this object another value.</span>
+    <script src="script.js"></script>
+</body>
+</html>
